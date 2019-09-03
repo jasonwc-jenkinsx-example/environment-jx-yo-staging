@@ -1,0 +1,110 @@
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-59mdb[0m
+{"level":"warn","ts":1567549525.2425427,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567549525.2431843,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-h6z56[0m
+{"level":"warn","ts":1567549526.2241492,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1567549526.227986,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jasonwc-jenkinsx-example-e-sl4wn[0m
+{"level":"warn","ts":1567549532.389968,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567549532.5448344,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/environment-**-yo-staging.git @ 231f3d7140bd61f11a54562042b3d9faaa74cc94 in path /workspace/source"}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:231f3d7140bd61f11a54562042b3d9faaa74cc94
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+selected pack: /builder/home/.**/draft/packs/github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/packs/environment
+Effective pipeline written to jenkins-x-promotion-effective.yml
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+running command: ** step next-version --use-git-tag-only --tag
+created new version: 0.0.2 and written to file: ./VERSION
+Tag v0.0.2 created and pushed to remote origin
+
+PipelineActivity for jasonwc-jenkinsx-example-environment-**-yo-staging-master-2
+Applying changes 
+upserted PipelineResource jasonwc-jenkinsx-example-enviro for the git repository https://github.com/jasonwc-jenkinsx-example/environment-**-yo-staging.git
+upserted Task jasonwc-jenkinsx-example-enviro-q5m2w-from-build-pack-2
+upserted Pipeline jasonwc-jenkinsx-example-enviro-q5m2w-2
+created PipelineRun jasonwc-jenkinsx-example-enviro-q5m2w-2
+created PipelineStructure jasonwc-jenkinsx-example-enviro-q5m2w-2
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-bccd4[0m
+{"level":"warn","ts":1567549541.5790696,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567549541.5803475,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-9gf8c[0m
+{"level":"warn","ts":1567549542.5425987,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1567549542.5478563,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/env\""}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jasonwc-jenkinsx-example-enviro-bxdrw[0m
+{"level":"warn","ts":1567549548.6452417,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567549548.8595128,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/environment-**-yo-staging.git @ v0.0.2 in path /workspace/source"}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:231f3d7140bd61f11a54562042b3d9faaa74cc94
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /builder/home/git/credentials
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-md6p9-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-apply[0m
+Modified file /workspace/source/env/Chart.yaml to set the chart to version 2
+Copying the helm source directory /workspace/source/env to a temporary location for building and applying /tmp/**-helm-apply-274039619/env
+Applying helm chart at /tmp/**-helm-apply-274039619/env as release name ** to namespace **-yo-staging
+verifying the helm requirements versions in dir: . using version stream URL:  and git ref: 
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Ignoring templates/.gitignore
+Wrote chart values.yaml /tmp/**-helm-apply-274039619/env/values.yaml generated from directory tree
+generated helm /tmp/**-helm-apply-274039619/env/values.yaml
+
+PipelineSecrets: {}
+cleanup:
+  Annotations:
+    helm.sh/hook: pre-delete
+    helm.sh/hook-delete-policy: hook-succeeded
+  Args:
+  - --cleanup
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  Args:
+  - --v
+  - 4
+  config:
+    domain: jenkins-x-example.dev.launch.adobe.net
+    exposer: Ingress
+    http: "true"
+jenkins:
+  Servers:
+    Global: {}
+prow: {}
+
+Using values files: /tmp/**-helm-apply-274039619/env/values.yaml
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+Applying Apps chart overrides
+Applying chart overrides
+
+
+release.jenkins.io "yo-backend-0.0.3" deleted
