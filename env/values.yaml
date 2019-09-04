@@ -20,3 +20,7 @@ jenkins:
   Servers:
     Global: {}
 prow: {}
+yo-frontend:
+  env:
+    api_url: http://yo-backend.jx-yo-staging.jenkins-x-example.dev.launch.adobe.net
+
