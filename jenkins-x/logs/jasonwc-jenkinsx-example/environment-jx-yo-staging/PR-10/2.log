@@ -1,0 +1,28 @@
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mlbz9-2[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-p6rml[0m
+{"level":"warn","ts":1568230574.8022754,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568230574.8029969,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mlbz9-2[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-xqgp4[0m
+{"level":"warn","ts":1568230575.7998464,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568230575.8011992,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mlbz9-2[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mlbz9-2[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jasonwc-jenkinsx-example-e-29q82[0m
+{"level":"warn","ts":1568230581.850979,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568230582.0693312,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/environment-**-yo-staging.git @ b399c6eca59683ae859c0cd6cac501469416a13a in path /workspace/source"}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mlbz9-2[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:b399c6eca59683ae859c0cd6cac501469416a13a,10:df34f8339d6cfaba47ac4e9b84ade0671d264aab
+DEBUG: ran git fetch --unshallow origin df34f8339d6cfaba47ac4e9b84ade0671d264aab: b399c6eca59683ae859c0cd6cac501469416a13a: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard b399c6eca59683ae859c0cd6cac501469416a13a in 
+DEBUG: ran clean --force -d . in 
+error: error during merge: merging df34f8339d6cfaba47ac4e9b84ade0671d264aab into master: git output: Auto-merging env/requirements.yaml
+CONFLICT (content): Merge conflict in env/requirements.yaml
+Automatic merge failed; fix conflicts and then commit the result.: failed to run 'git merge df34f8339d6cfaba47ac4e9b84ade0671d264aab' command in directory '', output: 'Auto-merging env/requirements.yaml
+CONFLICT (content): Merge conflict in env/requirements.yaml
+Automatic merge failed; fix conflicts and then commit the result.'
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-git-merge'. The execution of the pipeline has stopped.[0m
