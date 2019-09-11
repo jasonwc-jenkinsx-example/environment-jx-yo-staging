@@ -1,0 +1,45 @@
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-5fkh8[0m
+Unable to retrieve container logs for docker://eed1adc5d0af14518321cb3d7af5aa57036702bc377c84a9f4a1ad32dee1eea0
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-vcddp[0m
+Unable to retrieve container logs for docker://ae5f36d3f3ae3bc44775e407233ed5a8cb6ad16d4f29565d9ed3121733b1bd8f
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+Unable to retrieve container logs for docker://8abc5fa4eb24312d3a2f20e190e399f6d0148a645de310f1b2e958b403dd3334
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jasonwc-jenkinsx-example-e-csprt[0m
+Unable to retrieve container logs for docker://859a24d6c6957df0ba58fc3ca5d999dcf0a95170fae73e3c107074e8626f9c59
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Unable to retrieve container logs for docker://ca8dd9379bc8e5be74c5c14bbd74b1fb0da223c8e6282264aef2c0661e35884c
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+Unable to retrieve container logs for docker://4c52ffac9cae681a13efb8b8c6b301d45e491be95990d4b4c0ff2a9f7a27a6ee
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Unable to retrieve container logs for docker://b7e0c2566df4e82747b9fe92efb8ae1f74453559ac1dd06ac3e02a9b9f39fe46
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+Unable to retrieve container logs for docker://ac4125da766d4559ea20f1a4426ffdeb12c4133ee13c3f9b57aa9dfe90608123
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-sr8z7[0m
+Unable to retrieve container logs for docker://440913626e1b88394dc5d589bc780ec61e04a5a0b8b2eb2fbf89e9c074c4525d
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-wfqmw[0m
+Unable to retrieve container logs for docker://c583484621a8d8d5de99a73a305f05291f1a2d32622ef9a0f2d3583198aac795
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Unable to retrieve container logs for docker://c4e449d325c123b8e22a6dd7adb60800467473f1d6d973bbb7bf98ded5187d18
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jasonwc-jenkinsx-example-enviro-jdw6t[0m
+Unable to retrieve container logs for docker://3d9fae77a7d48ee9c568b66e42010943081f7ab44458451b57be049a9a1eaf8c
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Unable to retrieve container logs for docker://cf5796cc9c3644cf3840798a8acfa432ce738b191e74c957cd17e203f2ca8e12
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Unable to retrieve container logs for docker://85d5690aef2ba8edcc9f0f0e50dfba85ef4e4bd2b04f553b3dfec6edf519dfc4
+
+Showing logs for build [32mjasonwc-jenkinsx-example-enviro-tkcxh-9[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-apply[0m
+Unable to retrieve container logs for docker://796fc38748758e2a52b9f1be6e7b720632d0d040f7eb526e43dcc2c6fabcd6eb
