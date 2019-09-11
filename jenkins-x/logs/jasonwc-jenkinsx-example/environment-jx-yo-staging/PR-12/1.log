@@ -1,0 +1,81 @@
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-xbcqh[0m
+{"level":"warn","ts":1568230493.968429,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568230493.9689744,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-l6jjd[0m
+{"level":"warn","ts":1568230494.933164,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568230494.944568,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jasonwc-jenkinsx-example-e-w6mcd[0m
+{"level":"warn","ts":1568230526.014233,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568230526.7736347,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/environment-**-yo-staging.git @ af3f69b051e742285e9c8994bbf9fc2176edfe0e in path /workspace/source"}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:af3f69b051e742285e9c8994bbf9fc2176edfe0e,12:a990a2d9c7a355f8bf81daa417cd55212b86c16a
+DEBUG: ran git fetch --unshallow origin a990a2d9c7a355f8bf81daa417cd55212b86c16a: af3f69b051e742285e9c8994bbf9fc2176edfe0e: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard af3f69b051e742285e9c8994bbf9fc2176edfe0e in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge a990a2d9c7a355f8bf81daa417cd55212b86c16a in 
+Merged SHA a990a2d9c7a355f8bf81daa417cd55212b86c16a with commit message 'chore: Promote yo-backend to version 0.0.9' into base branch master
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+DEBUG: ran git fetch origin a990a2d9c7a355f8bf81daa417cd55212b86c16a: af3f69b051e742285e9c8994bbf9fc2176edfe0e: in 
+DEBUG: Unshallowed git repo in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard af3f69b051e742285e9c8994bbf9fc2176edfe0e in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge a990a2d9c7a355f8bf81daa417cd55212b86c16a in 
+Merged SHA a990a2d9c7a355f8bf81daa417cd55212b86c16a with commit message 'chore: Promote yo-backend to version 0.0.9' into base branch master
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+selected pack: /builder/home/.**/draft/packs/github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/packs/environment
+Effective pipeline written to jenkins-x-promotion-build-effective.yml
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+PipelineActivity for jasonwc-jenkinsx-example-environment-**-yo-staging-PR-12-1
+Applying changes 
+upserted PipelineResource jasonwc-jenkinsx-example-enviro for the git repository https://github.com/jasonwc-jenkinsx-example/environment-**-yo-staging.git
+upserted Task jasonwc-jenkinsx-example-enviro-vx2jg-from-build-pack-1
+upserted Pipeline jasonwc-jenkinsx-example-enviro-vx2jg-1
+created PipelineRun jasonwc-jenkinsx-example-enviro-vx2jg-1
+created PipelineStructure jasonwc-jenkinsx-example-enviro-vx2jg-1
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-klkxf[0m
+{"level":"warn","ts":1568230532.4473696,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568230532.4478576,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-qsxkp[0m
+{"level":"warn","ts":1568230532.9274533,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568230532.9285474,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/env\""}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jasonwc-jenkinsx-example-enviro-m2229[0m
+{"level":"warn","ts":1568230537.9523466,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568230538.124864,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/environment-**-yo-staging.git @ master in path /workspace/source"}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:af3f69b051e742285e9c8994bbf9fc2176edfe0e,12:a990a2d9c7a355f8bf81daa417cd55212b86c16a
+DEBUG: ran git fetch origin a990a2d9c7a355f8bf81daa417cd55212b86c16a: af3f69b051e742285e9c8994bbf9fc2176edfe0e: in 
+DEBUG: Unshallowed git repo in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard af3f69b051e742285e9c8994bbf9fc2176edfe0e in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge a990a2d9c7a355f8bf81daa417cd55212b86c16a in 
+Merged SHA a990a2d9c7a355f8bf81daa417cd55212b86c16a with commit message 'chore: Promote yo-backend to version 0.0.9' into base branch master
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-mxtwn-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
