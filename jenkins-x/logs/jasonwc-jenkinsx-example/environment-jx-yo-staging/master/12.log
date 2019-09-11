@@ -1,0 +1,133 @@
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-gdxpg[0m
+{"level":"warn","ts":1568231405.8325765,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568231405.8331132,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-xxb5g[0m
+{"level":"warn","ts":1568231406.7933898,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568231406.7943149,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jasonwc-jenkinsx-example-e-4gkk6[0m
+{"level":"warn","ts":1568231430.8490765,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568231431.0079632,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/environment-**-yo-staging.git @ 920480f5a1a7d3fb2a3bc07eff44385afc33cfb4 in path /workspace/source"}
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:920480f5a1a7d3fb2a3bc07eff44385afc33cfb4
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+selected pack: /builder/home/.**/draft/packs/github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/packs/environment
+Effective pipeline written to jenkins-x-promotion-effective.yml
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+running command: ** step next-version --use-git-tag-only --tag
+created new version: 0.0.12 and written to file: ./VERSION
+Tag v0.0.12 created and pushed to remote origin
+
+PipelineActivity for jasonwc-jenkinsx-example-environment-**-yo-staging-master-12
+Applying changes 
+upserted PipelineResource jasonwc-jenkinsx-example-enviro for the git repository https://github.com/jasonwc-jenkinsx-example/environment-**-yo-staging.git
+upserted Task jasonwc-jenkinsx-example-enviro-2v4nv-from-build-pack-12
+upserted Pipeline jasonwc-jenkinsx-example-enviro-2v4nv-12
+created PipelineRun jasonwc-jenkinsx-example-enviro-2v4nv-12
+created PipelineStructure jasonwc-jenkinsx-example-enviro-2v4nv-12
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-credential-initializer-9qr86[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-9qr86[0m
+{"level":"warn","ts":1568231439.708838,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568231439.7095256,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-working-dir-initializer-4clwk[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-4clwk[0m
+{"level":"warn","ts":1568231440.9372203,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568231440.940789,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/env\""}
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-place-tools[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-source-jasonwc-jenkinsx-example-enviro-2s7wg[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jasonwc-jenkinsx-example-enviro-2s7wg[0m
+{"level":"warn","ts":1568231482.1064768,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568231482.2643228,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jasonwc-jenkinsx-example/environment-**-yo-staging.git @ v0.0.12 in path /workspace/source"}
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-merge[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:920480f5a1a7d3fb2a3bc07eff44385afc33cfb4
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-setup-jx-git-credentials[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /builder/home/git/credentials
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-helm-apply[0m to start...
+
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-pxzh4-12[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-apply[0m
+Modified file /workspace/source/env/Chart.yaml to set the chart to version 12
+Copying the helm source directory /workspace/source/env to a temporary location for building and applying /tmp/**-helm-apply-504062389/env
+Applying helm chart at /tmp/**-helm-apply-504062389/env as release name ** to namespace **-yo-staging
+verifying the helm requirements versions in dir: . using version stream URL:  and git ref: 
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Ignoring templates/.gitignore
+Wrote chart values.yaml /tmp/**-helm-apply-504062389/env/values.yaml generated from directory tree
+generated helm /tmp/**-helm-apply-504062389/env/values.yaml
+
+PipelineSecrets: {}
+cleanup:
+  Annotations:
+    helm.sh/hook: pre-delete
+    helm.sh/hook-delete-policy: hook-succeeded
+  Args:
+  - --cleanup
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  Args:
+  - --v
+  - 4
+  config:
+    domain: jenkins-x-example.dev.launch.adobe.net
+    exposer: Ingress
+    http: "true"
+jenkins:
+  Servers:
+    Global: {}
+prow: {}
+yo-frontend:
+  api_url: http://yo-backend.**-yo-staging.jenkins-x-example.dev.launch.adobe.net
+
+Using values files: /tmp/**-helm-apply-504062389/env/values.yaml
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+Applying Apps chart overrides
+Applying chart overrides
+
+
+release.jenkins.io "yo-backend-0.0.9" deleted
