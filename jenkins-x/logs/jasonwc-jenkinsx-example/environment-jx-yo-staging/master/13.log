@@ -1,0 +1,45 @@
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-cgbtg[0m
+Unable to retrieve container logs for docker://a5cc90cb4d41fbb5abe9dce2afbb070b408d57c2151034910d3ca9bb2e8e1a53
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-hcd5b[0m
+Unable to retrieve container logs for docker://05f345e5f3217e15f022d15f11f7d18da4681ed4c3764e44f3e1704b1e4e6247
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+Unable to retrieve container logs for docker://b968828dc28e046b215b51f137693c6d56850475c8ca4a74cc5d52cec36e1748
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jasonwc-jenkinsx-example-e-64855[0m
+Unable to retrieve container logs for docker://c9cf06fde794adfb523f2c969b7684738a5f9b5a8180eb1d5cc4df452bf2cb9c
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Unable to retrieve container logs for docker://ae3039128aed59ea463a122a11f738058e93889442eb71a968f0d6eaa12a3176
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+Unable to retrieve container logs for docker://a9eac09e8e18f1779271e8125a94693c6c73cf5cfc67ca17d2dcd30e185744c8
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Unable to retrieve container logs for docker://d6e7b92f1280c5c4ee74fa748a7f7cf5752eed38515286481c4d9fd8364509e4
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+Unable to retrieve container logs for docker://38d5071cd03269173917b851ab8c8018881f10cd0168dfa6ae60cac9c69f9445
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-jfx48[0m
+Unable to retrieve container logs for docker://da8064377b17e19c91404d23ec20689c99ca0737f53295558e73219a1f0b761a
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-w4tp6[0m
+Unable to retrieve container logs for docker://5f26fb404d1f66be82bf4342cd1e844ddb95ee5ec26e2387fc47282fd66ee811
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Unable to retrieve container logs for docker://3a8c46717f538e5c7496c8b83114d228e2f6a07f69d30148eb44a1cebf329f94
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jasonwc-jenkinsx-example-enviro-wvnfq[0m
+Unable to retrieve container logs for docker://59e03a9ba09eac0800a3c67c6ba0f1498678cb37a51d243355fdd13870496cc6
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Unable to retrieve container logs for docker://0e0253dfc68e17e70de5b286c88db11c8cc50986682d5eaf768d061a17597400
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Unable to retrieve container logs for docker://6245afa56dd36bfd4dc33cedbd77fd618c9719c21bf644e9d6b73c6b5612945b
+
+Showing logs for build [32mmeta-jasonwc-jenkinsx-example-e-7gljz-13[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-apply[0m
+Unable to retrieve container logs for docker://f27c5d1a78c994acf31782b003c2395aa1b6091b37a9ff639ae678b9f81180d3
